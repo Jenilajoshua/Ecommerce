@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.img_text{
+    font-family: 'Lobster', cursive;
+}
+#logo_img{
+    max-width:100px;
+    max-height: 100px;   
+}
+nav{
+    overflow-x: hidden;
+}
+.sf{
+    border: none;
+}
+.search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -40px;
+  }
+  form{
+   border:solid 0.5px;
+   border-radius: 5px;
+  }

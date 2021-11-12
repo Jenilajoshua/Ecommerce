@@ -1,0 +1,19 @@
+<div class="">
+<div class="row mx-1">
+ 
+<div class=" mt-5   col-sm-12 col-md-6 col-lg-6  card-deck text-center  d-flex  justify-content-center " *ngFor="let product of products">   
+   <div class="card" >
+      <img class="card-img-top text-center img-fluid" src={{product.image}} alt={{product.category}} id="cardimg">
+      <div class="card-body" >
+        <h5 class="card-title">{{product.title}}</h5>
+        <small class="card-text">{{product.description}} </small> 
+        <button class="btn btn-success mt-3 ">Rating : {{product.rating.rate}} <br> Availability : {{product.rating.count}}</button>  
+      </div>
+      <!-- <div class="mb-3">       
+        <button class="btn btn-success">Rating : {{product.rating.rate}} <br> Availability : {{product.rating.count}}</button>  
+        <button class="btn btn-success">Availability :{{product.rating.count}}</button>  
+      </div> -->
+    </div>    
+  </div>
+  </div>
+</div>

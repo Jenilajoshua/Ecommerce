@@ -1,0 +1,43 @@
+
+  <div class="row">
+    <app-header></app-header>
+  </div>
+
+
+  <div class="row">
+    <div class="offset-md-2 col-sm-8 offset-md-2">
+<div class="row">
+    <div class="offset-lg-2 col-sm-12 col-lg-8 offset-lg-2">
+        <div class="card bord">
+            <div class=" card-body ">
+                <h1 class="text-center">Sign In</h1>
+                <div class="">
+                    <form [formGroup]="profile" (ngSubmit)="onSubmit();">
+                        <div class="row form-group ">
+                            <div class="col-sm-12 "><label >Email address</label> </div>
+                            <div class="col-sm-12"><input class=" form-control" required type="email"  name="email_in" placeholder="Enter email" id="Email" formControlName="email_in"></div>
+                        </div>
+                        <div class="alert alert-danger mb-4" *ngIf= "(!profile.controls.email_in?.valid)&&(profile.controls.email_in.touched)">Valid Username is required.</div>
+                        <div class="row form-group  mt-2">
+                            <div class="col-sm-12 "><label >Password</label> </div>
+                            <div class="col-sm-12"><input class="form-control " required value="" type="password" name="pass_in" placeholder="Enter password" id="Email" formControlName="pass_in"></div>
+                        </div>
+                        <div class="alert alert-danger mb-4" *ngIf= "(!profile.controls.pass_in?.valid)&&(profile.controls.pass_in.touched) ">Valid Password is required.</div>
+                        <div class="row form-group mx-1  mt-2"> 
+                            
+                           <label class="text" for=""><input type="checkbox"> Remember me</label>  
+                        </div>
+                        <div class="row form-group mx-1  mt-2"> 
+                            <button type="submit" class="form-control btn btn-primary" [disabled]="!profile.valid">Submit</button>
+                         </div>
+                         <div class="row form-group mx-1  mt-2 float-right"> 
+                           <label type="text" class="">Forget <a href="">Password ?</a></label>
+                         </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
