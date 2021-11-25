@@ -14,13 +14,13 @@
                 <div class="">
                     <form [formGroup]="profile" (ngSubmit)="onSubmit();">
                         <div class="row form-group ">
-                            <div class="col-sm-12 "><label >Email address</label> </div>
-                            <div class="col-sm-12"><input class=" form-control" required type="email"  name="email_in" placeholder="Enter email" id="Email" formControlName="email_in"></div>
+                            <div class="col-sm-12 "><label >Username</label> </div>
+                            <div class="col-sm-12"><input class=" form-control" required type="text"  name="un_in" placeholder="username --> admin (testing)" id="Name" formControlName="un_in"></div>
                         </div>
-                        <div class="alert alert-danger mb-4" *ngIf= "(!profile.controls.email_in?.valid)&&(profile.controls.email_in.touched)">Valid Username is required.</div>
+                        <div class="alert alert-danger mb-4" *ngIf= "(!profile.controls.un_in?.valid)&&(profile.controls.un_in.touched)">Valid Username is required.</div>
                         <div class="row form-group  mt-2">
                             <div class="col-sm-12 "><label >Password</label> </div>
-                            <div class="col-sm-12"><input class="form-control " required value="" type="password" name="pass_in" placeholder="Enter password" id="Email" formControlName="pass_in"></div>
+                            <div class="col-sm-12"><input class="form-control " required value="" type="password" name="pass_in" placeholder="password --> admin (testing)" id="Email" formControlName="pass_in"></div>
                         </div>
                         <div class="alert alert-danger mb-4" *ngIf= "(!profile.controls.pass_in?.valid)&&(profile.controls.pass_in.touched) ">Valid Password is required.</div>
                         <div class="row form-group mx-1  mt-2"> 
